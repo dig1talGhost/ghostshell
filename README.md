@@ -5,14 +5,14 @@ A very simple, yet elegant greeter for your terminal. Built with Go and lipgloss
 ### Installation
 
 #### Using curl
-Dowload the latest release and the `sha256sum`:
+Dowload the latest release and the `sha512sum`:
 ```bash
 curl -L -O "https://github.com/dig1talGhost/ghostshell/releases/download/v0.0.1/ghostshell-v0.0.1-linux-amd64"
-curl -L -O "https://github.com/dig1talGhost/ghostshell/releases/download/v0.0.1/sha256sum.txt"
+curl -L -O "https://github.com/dig1talGhost/ghostshell/releases/download/v0.0.1/sha512sum.txt"
 ```
-Verify your download with `sha256sum`:
+Verify your download with `sha512sum`:
 ```bash
-sha256sum -c sha256sum.txt
+sha512sum -c sha512sum.txt
 ```
 You should get something like this:
 ```
