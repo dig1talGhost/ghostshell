@@ -76,13 +76,14 @@ func loadVersion(versionFile string) {
 	if versionFile == "" {
 		return
 	}
-
 	versionFile = expandPath(versionFile)
+
 	content, err := os.ReadFile(versionFile)
 	if err != nil {
 		logger.Printf("Warning: Could not read version file %s: %v\n", versionFile, err)
 		return
 	}
+
 	version = strings.TrimSpace(string(content))
 }
 
@@ -93,6 +94,7 @@ func makeTree(version string) {
 			tree.New().
 				Root(treeSubRootStyle.Render(version)),
 		)
+
 	lipgloss.Println(t)
 }
 
